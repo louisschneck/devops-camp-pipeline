@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Application repository') {
             steps {
-                echo "Cloning application repository"
+                echo "Cloning application repository4"
                 //TODO("Lab 3 - Introduction to Automated Builds"): add github url
                 sh 'git clone https://github.com/louisschneck/afs-labs-student.git'
                 //TODO("Lab 4 - Artifact Management"): add an environment variable
