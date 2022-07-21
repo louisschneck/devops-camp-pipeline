@@ -61,7 +61,7 @@ pipeline {
                       }
                   }
               }
-                stage('Security scanning') {
+/*                stage('Security scanning') {
                   steps {
                        withCredentials([usernamePassword(credentialsId: 'lschneck-harbor-auth', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                             echo "Scanning $DB_IMAGE_NAME image"
@@ -69,6 +69,7 @@ pipeline {
                        }
                   }
                 }
+*/
               stage('Deploy') {
                   steps {
                       echo "Deployment stage"
