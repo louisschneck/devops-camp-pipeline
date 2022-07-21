@@ -45,7 +45,6 @@ pipeline {
                               }
                           }
                       }
-                  }
                   post {
                       //TODO: clean local docker images
                       always {
